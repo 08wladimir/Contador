@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         txtCiclo = (TextView) findViewById(R.id.textView);
         txtCiclo.setText("Paso Por el onCreate");
-        setContentView(R.layout.activity_main);
 
         txt = (TextView) findViewById(R.id.txtContador);
 
