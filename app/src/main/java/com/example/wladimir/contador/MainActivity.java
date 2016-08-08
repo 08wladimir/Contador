@@ -10,12 +10,14 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private Button btn, btnR;
-    private TextView txt;
+    private TextView txt, txt2;
     private int contador = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        txt2 = (TextView) findViewById(R.id.textView);
+        txt2.setText("Paso Por el onCreate");
         setContentView(R.layout.activity_main);
 
         txt = (TextView) findViewById(R.id.txtContador);
