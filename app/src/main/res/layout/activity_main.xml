@@ -13,37 +13,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wladimir Rodriguez Palencia"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contador: 0"
         android:id="@+id/txtContador"
-        android:layout_below="@+id/textView" />
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+ Aumentar"
         android:id="@+id/btnSumar"
-        android:layout_below="@+id/textView"
-        android:layout_marginTop="60dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="- Disminuir"
-        android:id="@+id/btnRestar"
-        android:layout_below="@+id/btnSumar"
-        android:layout_marginTop="5dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="500dp"
         android:layout_height="200dp"
         android:id="@+id/img"
         android:src="@drawable/wladimir"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp" />
 
 </RelativeLayout>

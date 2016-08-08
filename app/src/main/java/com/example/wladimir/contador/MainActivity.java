@@ -9,15 +9,15 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn, btnR;
-    private TextView txt, txt2;
+    private Button btn;
+    private TextView txt, txtCiclo;
     private int contador = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        txt2 = (TextView) findViewById(R.id.textView);
-        txt2.setText("Paso Por el onCreate");
+        txtCiclo = (TextView) findViewById(R.id.textView);
+        txtCiclo.setText("Paso Por el onCreate");
         setContentView(R.layout.activity_main);
 
         txt = (TextView) findViewById(R.id.txtContador);
@@ -28,20 +28,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 contador++;
+                txtCiclo.setText("Paso por el onClick");
                 txt.setText("Contador: " + contador);
             }
 
         });
 
-        btnR = (Button) findViewById(R.id.btnRestar);
-
-        btnR.setOnClickListener(new OnClickListener( ) {
-            @Override
-            public void onClick(View view) {
-                contador--;
-                txt.setText("Contador: " + contador);
-            }
-
-        });
     }
 }
